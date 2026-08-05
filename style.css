@@ -1,0 +1,60 @@
+/* Mengatur font dan warna latar belakang seluruh halaman website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Mengatur tampilan Judul Utama */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Mengatur tampilan Biodata Anggota Kelompok */
+.biodata {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Mengatur tampilan Tabel agar rapi */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Mengatur tampilan tombol/link */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mengatur bagian bawah halaman (Footer) */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}

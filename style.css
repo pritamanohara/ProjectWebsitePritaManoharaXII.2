@@ -1,48 +1,69 @@
-/* Mengatur font dan warna latar belakang seluruh halaman website */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #fff0f5; /* Background Pink Halus */
     color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-/* Mengatur tampilan Judul Utama */
-h1 {
-    color: #2c3e50;
+header {
+    background-color: #ff69b4; /* Pink Cerah */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 105, 180, 0.2);
+    border-left: 5px solid #ff69b4;
+}
+
+.profile-photo {
     text-align: center;
 }
 
-/* Mengatur tampilan Biodata Anggota Kelompok */
-.biodata {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff69b4;
 }
 
-/* Mengatur tampilan Tabel agar rapi */
+h2 {
+    color: #d81b60; /* Pink Gelap untuk Judul Section */
+    margin-top: 0;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 th, td {
-    border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
+    border-bottom: 1px solid #ffe4e1;
 }
 
 th {
-    background-color: #3498db;
+    background-color: #ff8da1; /* Pink Tabel */
     color: white;
 }
 
-/* Mengatur tampilan tombol/link */
 a {
-    color: #3498db;
+    color: #d81b60;
     text-decoration: none;
     font-weight: bold;
 }
@@ -51,10 +72,10 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Mengatur bagian bawah halaman (Footer) */
 footer {
     text-align: center;
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #7f8c8d;
+    padding: 15px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 14px;
 }

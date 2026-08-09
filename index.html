@@ -3,60 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Profil Prita Manohara XII.2</title>
-    <!-- Menyambungkan ke file style.css -->
-    <link rel="stylesheet" href="style.css">
+    <title>Website Profil Prita Manohara</title>
+    <link rel="stylesheet" href="gaya.css">
 </head>
 <body>
 
-    <!-- Judul Website -->
-    <h1>Selamat Datang di Website Resmi Prita Manohara</h1>
-    
-    <!-- Profil Sekolah & Kelas -->
-    <div class="biodata">
-        <h2>Profil Kelas & Sekolah</h2>
-        <p>Halo! Nama saya Prita Manohara dari kelas XII.2 SMA. Website ini saya buat sendiri secara mandiri sebagai proyek pembelajaran mata pelajaran Informatika untuk mempublikasikan artefak digital melalui platform kolaborasi GitHub Pages.</p>
-    </div>
+    <header>
+        <h1>Selamat Datang di Website Resmi Prita Manohara</h1>
+    </header>
 
-    <!-- Biodata Mandiri (Tabel) -->
-    <div class="biodata">
-        <h2>Biodata Diri</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Detail Informasi</th>
-                    <th>Data Diri</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Nama Lengkap</strong></td>
-                    <td>Prita Manohara</td>
-                </tr>
-                <tr>
-                    <td><strong>Kelas</strong></td>
-                    <td>Fase F / Kelas XII.2</td>
-                </tr>
-                <tr>
-                    <td><strong>Hobi</strong></td>
-                    <td>Belajar Teknologi & Coding Sederhana</td>
-                </tr>
-                <tr>
-                    <td><strong>Cita-cita</strong></td>
-                    <td>Menjadi Reporter atau Presenter/ Penulis Sukses</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <main class="container">
+        <!-- Tambahan Foto Diri / Profil -->
+        <section class="card profile-photo">
+            <img src="foto.jpg" alt="Foto Prita Manohara">
+        </section>
 
-    <!-- Tautan Penting -->
-    <div class="biodata">
-        <h2>Tautan Resmi</h2>
-        <p>Untuk informasi pendidikan dan pembelajaran lebih lanjut, silakan kunjungi link di bawah ini:</p>
-        <p>🔗 <a href="https://kemdikbud.go.id" target="_blank">Klik di sini untuk mengunjungi situs Resmi Kemdikbud</a></p>
-    </div>
+        <section class="card">
+            <h2>Profil Kelas & Sekolah</h2>
+            <p>Halo! Selamat datang di website khusus. Berkenalan dengan saya lebih jauh melalui website ini!. Nama saya Prita Manohara dari kelas XII.2 SMA Negeri 10 Depok. Website ini saya buat sendiri secara mandiri sebagai proyek pembelajaran mata pelajaran Informatika melalui platform kolaborasi GitHub Pages.</p>
+        </section>
 
-    <!-- Bagian Bawah Website (Footer) -->
+        <section class="card">
+            <h2>Biodata Diri</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Detail Informasi</th>
+                        <th>Data Diri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>Prita Manohara</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>Fase F / Kelas XII.2</td>
+                    </tr>
+                    <tr>
+                        <td>Hobi</td>
+                        <td>Menulis & Berkegiatan Sosial</td>
+                    </tr>
+                    <tr>
+                        <td>Cita-cita</td>
+                        <td>Menjadi Reporter atau Presenter & Penulis Sukses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Tautan Resmi</h2>
+            <p>Untuk informasi pendidikan dan pembelajaran lebih lanjut, silakan kunjungi link di bawah ini:</p>
+            <!-- Perbaikan Link dengan https:// -->
+            <a href="https://www.kemdikbud.go.id" target="_blank">🔗 Klik di sini untuk mengunjungi situs Resmi Kemdikbud</a>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2026 Prita Manohara - Kelas XII.2. All Rights Reserved.</p>
     </footer>

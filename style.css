@@ -1,48 +1,154 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff0f5; /* Background Pink Halus */
-    color: #333;
+:root {
+    --primary: #ff527b;
+    --primary-light: #ff7597;
+    --bg-gradient: linear-gradient(135deg, #ffeef2 0%, #ffd6e0 100%);
+    --card-bg: #ffffff;
+    --text-color: #4a4a4a;
+    --heading-color: #d81b60;
+    --shadow: 0 10px 25px rgba(255, 82, 123, 0.15);
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+/* Header Section */
 header {
-    background-color: #ff69b4; /* Pink Cerah */
+    background: linear-gradient(135deg, #ff527b, #ff7597);
     color: white;
     text-align: center;
-    padding: 20px 10px;
+    padding: 50px 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: var(--shadow);
 }
 
+.profile-avatar img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+.profile-avatar img:hover {
+    transform: scale(1.08) rotate(3deg);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+/* Layout Container */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 15px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
+/* Card Styling */
 .card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(255, 105, 180, 0.2);
-    border-left: 5px solid #ff69b4;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.profile-photo {
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 82, 123, 0.25);
+}
+
+.card.reverse {
+    flex-direction: row-reverse;
+}
+
+.card.vertical {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card h2 {
+    color: var(--heading-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Photo Dump Styling */
+.photo-dump {
+    flex: 0 0 220px;
     text-align: center;
 }
 
-.profile-photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ff69b4;
+.img-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 8px;
+    border: 2px dashed var(--primary-light);
+    cursor: pointer;
 }
 
-h2 {
-    color: #d81b60; /* Pink Gelap untuk Judul Section */
-    margin-top: 0;
+.img-wrapper img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.caption {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+/* Tabel Biodata */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 15px;
 }
 
 table {
@@ -52,30 +158,91 @@ table {
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #ffe4e1;
+    border-bottom: 1px solid #ffe0e6;
 }
 
 th {
-    background-color: #ff8da1; /* Pink Tabel */
-    color: white;
+    background-color: #fff0f3;
+    color: var(--heading-color);
+    font-weight: 700;
 }
 
-a {
-    color: #d81b60;
+tr:hover {
+    background-color: #fffafb;
+}
+
+/* Pengalaman OSIS */
+.exp-item {
+    background: #fff5f7;
+    padding: 15px;
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.exp-item h3 {
+    font-size: 1.05rem;
+    color: var(--heading-color);
+    margin-bottom: 5px;
+}
+
+/* Motto */
+.motto-box {
+    text-align: center;
+}
+
+.motto-text {
+    font-style: italic;
+    font-size: 1.15rem;
+    color: #c2185b;
+    background: #fff0f3;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px solid #ffd6e0;
+}
+
+/* Instagram Button */
+.text-center {
+    text-align: center;
+}
+
+.btn-instagram {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.btn-instagram:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(220, 39, 67, 0.4);
 }
 
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: #ff69b4;
-    color: white;
-    font-size: 14px;
+    margin-top: 30px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive Handphone */
+@media (max-width: 768px) {
+    .card, .card.reverse {
+        flex-direction: column;
+    }
+    
+    .photo-dump {
+        width: 100%;
+        flex: auto;
+    }
 }

@@ -1,180 +1,83 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Profil - Prita Manohara</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- CDN AOS (Animate On Scroll) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <!-- Font Awesome untuk Ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Resmi Prita Manohara</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="navbar">
-  <div class="logo">Prita Manohara</div>
-  <nav>
-    <ul>
-      <li><a href="#profil">Profil</a></li>
-      <li><a href="#sekolah">Sekolah</a></li>
-      <li><a href="#biodata">Biodata</a></li>
-      <li><a href="#organisasi">Organisasi</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Prita Manohara</div>
+    <nav>
+      <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#sekolah">Sekolah</a></li>
+        <li><a href="#kelas">Kelas</a></li>
+        <li><a href="#hobi">Hobi</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Header / Banner Utama -->
-    <header data-aos="fade-down">
-        <div class="header-container">
-            <div class="profile-avatar">
-                <img src="foto.jpg" alt="Foto Prita Manohara">
-            </div>
-            <h1>Selamat Datang di Website Resmi</h1>
-            <h2>Prita Manohara</h2>
-            <p class="subtitle">Siswa Fase F / XII.2 — SMAN 10 Depok</p>
-        </div>
-    </header>
+  <!-- SLIDE 1: INTRO -->
+  <section id="intro" class="slide hero-section">
+    <h1>Heloow! I`m Prita!</h1>
+    <p>come get to know me better!</p>
+    <img src="foto.jpg" alt="Prita Manohara">
+  </section>
 
-    <main class="container">
+  <!-- SLIDE 2: GAMBARAN SINGKAT -->
+  <section id="about" class="slide">
+    <h2>Sekilas Tentang Aku</h2>
+    <p>Halo! Nama saya Prita Manohara. Saya seorang siswi SMA yang ceria, penuh semangat, dan aktif di organisasi.</p>
+    <img src="foto.jpg" alt="Profil Prita">
+  </section>
 
-        <!-- 1. Profil Diri -->
-        <section class="card" data-aos="fade-up">
-            <div class="card-content">
-                <h2><i class="fa-solid fa-user-astronaut"></i> Profil Diri</h2>
-                <p>Halo! Perkenalkan, nama saya <strong>Prita Manohara</strong>. Saya seorang siswi SMA yang memiliki ketertarikan tinggi di bidang komunikasi, jurnalistik, serta kegiatan organisasi sosial. Website ini saya bangun mandiri sebagai bagian dari proyek pembelajaran Informatika sekaligus media portofolio digital saya.</p>
-            </div>
-            <div class="photo-dump">
-                <div class="img-wrapper">
-                    <img src="foto.jpg" alt="Photo Dump Profil">
-                    <span class="caption">📸 My Daily Vibe</span>
-                </div>
-            </div>
-        </section>
+  <!-- SLIDE 3: SEKOLAH -->
+  <section id="sekolah" class="slide">
+    <h2>SMA Negeri 10 Depok</h2>
+    <p>Saat ini saya menempuh pendidikan di SMA Negeri 10 Depok. Sekolah yang seru dan mendukung saya untuk berkembang.</p>
+    <img src="foto.jpg" alt="SMAN 10 Depok">
+  </section>
 
-        <!-- 2. Profil Sekolah & Kelas -->
-        <section class="card reverse" data-aos="fade-up">
-            <div class="card-content">
-                <h2><i class="fa-solid fa-school"></i> Sekolah & Kelas</h2>
-                <p>Saat ini saya menempuh pendidikan di <strong>SMA Negeri 10 Depok</strong> dan berada di <strong>Fase F / Kelas XII.2</strong>. Di sekolah ini, saya aktif menyeimbangkan kewajiban akademis dengan berbagai kegiatan ekstrakurikuler serta kepengurusan organisasi siswa.</p>
-            </div>
-            <div class="photo-dump">
-                <div class="img-wrapper">
-                    <img src="foto-sekolah.jpg" alt="Photo Dump Sekolah" onerror="this.src='foto.jpg'">
-                    <span class="caption">🏫 SMAN 10 Depok & XII.2</span>
-                </div>
-            </div>
-        </section>
+  <!-- SLIDE 4: KELAS -->
+  <section id="kelas" class="slide">
+    <h2>Kelas XII.2</h2>
+    <p>XII.2 asik banget! Seru, ramah, perhatian, dan temen-temennya pinter plus cerdas.</p>
+    <img src="foto.jpg" alt="Kelas XII.2">
+  </section>
 
-        <!-- 3. Tabel Biodata Diri (Dirinci Lengkap) -->
-        <section class="card vertical" data-aos="fade-up">
-            <h2><i class="fa-solid fa-address-card"></i> Biodata Lengkap</h2>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Kategori</th>
-                            <th>Rincian Informasi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Nama Lengkap</strong></td>
-                            <td>Prita Manohara</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Institusi / Sekolah</strong></td>
-                            <td>SMA Negeri 10 Depok</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Kelas / Tingkat</strong></td>
-                            <td>Fase F / Kelas XII.2</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Mata Pelajaran Favorit</strong></td>
-                            <td>Informatika, Bahasa Indonesia, & Sosiologi</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hobi & Minat</strong></td>
-                            <td>Menulis, Public Speaking, Berorganisasi, & Kegiatan Sosial</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cita-cita / Karir Impian</strong></td>
-                            <td>Reporter / News Presenter & Penulis Sukses</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Keahlian (Skills)</strong></td>
-                            <td>Communication, Event Organizing, Content Creation, Basic Web Design</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="photo-dump grid-dump">
-                <div class="img-wrapper">
-                    <img src="foto-biodata.jpg" alt="Photo Dump Biodata" onerror="this.src='foto.jpg'">
-                    <span class="caption">✨ Moments & Activities</span>
-                </div>
-            </div>
-        </section>
+  <!-- SLIDE 5: HOBI & KESIBUKAN -->
+  <section id="hobi" class="slide">
+    <h2>Hobi & Kesibukan</h2>
+    <p>Hobi aku menulis, public speaking, dan berorganisasi. Kesibukan sekarang fokus studi tingkat akhir dan aktif kegiatan sosial.</p>
+  </section>
 
-        <!-- 4. Pengalaman High School (OSIS & Forum OSIS Depok) -->
-        <section class="card" data-aos="fade-up">
-            <div class="card-content">
-                <h2><i class="fa-solid fa-award"></i> Pengalaman Organisasi</h2>
-                <div class="exp-item">
-                    <h3><i class="fa-solid fa-star"></i> Pengurus OSIS SMAN 10 Depok</h3>
-                    <p>Aktif menyusun, mengordinasikan, dan mengeksekusi berbagai program kerja sekolah, baik event kedisiplinan, seni, maupun kegiatan sosial siswa.</p>
-                </div>
-                <div class="exp-item">
-                    <h3><i class="fa-solid fa-people-group"></i> Forum OSIS Kota Depok (FOKD)</h3>
-                    <p>Terlibat dalam wadah silaturahmi dan kolaborasi antar pengurus OSIS se-Kota Depok untuk mengembangkan kepemimpinan serta aksi nyata bagi pelajar Depok.</p>
-                </div>
-            </div>
-            <div class="photo-dump">
-                <div class="img-wrapper">
-                    <img src="foto-osis.jpg" alt="Photo Dump OSIS" onerror="this.src='foto.jpg'">
-                    <span class="caption">🎗️ OSIS & Forum OSIS Depok</span>
-                </div>
-            </div>
-        </section>
+  <!-- SLIDE 6: ORGANISASI -->
+  <section id="organisasi" class="slide">
+    <h2>Pengalaman Organisasi</h2>
+    <h3>MPK OSIS SMAN 10 Depok</h3>
+    <p>Aktif dalam menyusun dan mengeksekusi program kerja sekolah.</p>
+    <img src="foto.jpg" alt="MPK OSIS">
+    <h3>Forum Kesatuan Pelajar Depok</h3>
+    <p>Wadah kolaborasi pengurus organisasi pelajar se-Kota Depok.</p>
+    <img src="foto.jpg" alt="Forum Pelajar 1">
+  </section>
 
-        <!-- 5. Motto Hidup -->
-        <section class="card reverse" data-aos="fade-up">
-            <div class="card-content motto-box">
-                <h2><i class="fa-solid fa-quote-left"></i> Motto Hidup</h2>
-                <blockquote class="motto-text">
-                    "If you don’t wanna grind for your own dreams today, get ready to get paid to build someone else’s."
-                </blockquote>
-            </div>
-            <div class="photo-dump">
-                <div class="img-wrapper">
-                    <img src="foto-motto.jpg" alt="Photo Dump Motto" onerror="this.src='foto.jpg'">
-                    <span class="caption">🌸 Words to Live By</span>
-                </div>
-            </div>
-        </section>
+  <!-- SLIDE 7: SOSIAL MEDIA -->
+  <section id="kontak" class="slide">
+    <h2>Let's Connect! 🌟</h2>
+    <p>Yuk, kunjungi Instagram aku!</p>
+    <a href="https://instagram.com" target="_blank">@pritamanohara</a>
+  </section>
 
-        <!-- 6. Link Instagram & Media Sosial -->
-        <section class="card vertical text-center" data-aos="zoom-in">
-            <h2><i class="fa-solid fa-link"></i> Kenali Saya Lebih Lanjut</h2>
-            <p>Ingin bertegur sapa, berkolaborasi, atau melihat aktivitas harian saya?</p>
-            <a href="https://www.instagram.com/pritamanohara" target="_blank" class="btn-instagram">
-                <i class="fa-brands fa-instagram"></i> Kunjungi Instagram @pritamanohara
-            </a>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Prita Manohara. Dibuat dengan ❤️ untuk Proyek Informatika SMAN 10 Depok.</p>
-    </footer>
-
-    <!-- Script Animasi Scroll AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 900,
-            once: true
-        });
-    </script>
+  <!-- SLIDE 8: QUOTES -->
+  <footer class="slide">
+    <p>"If you don't wanna grind for your own dreams today, get ready to get paid to build someone else's."</p>
+  </footer>
 </body>
 </html>

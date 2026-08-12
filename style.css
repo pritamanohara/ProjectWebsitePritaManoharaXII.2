@@ -245,4 +245,52 @@ footer {
         width: 100%;
         flex: auto;
     }
+    /* Membuat efek scroll halus saat menu diklik */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mengatur posisi navbar agar tetap menempel di atas */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff6b8b; /* Menyesuaikan warna pink tema kamu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Efek saat kursor diarahkan ke menu */
+.navbar ul li a:hover {
+  color: #ffebee;
+  text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
 }

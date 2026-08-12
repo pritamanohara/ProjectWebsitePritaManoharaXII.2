@@ -1,356 +1,355 @@
-/* RESET & UMUM */ 
-
+/* RESET & UMUM */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-scroll-behavior: smooth;
-} 
+  scroll-behavior: smooth;
+}
 
 body {
-font-family: 'Plus Jakarta Sans', sans-serif;
-background-color: #FAF6F0; /* Warna cream estetik */
-color: #2F2E2E;
-} 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FAF6F0; /* Cream estetik */
+  color: #2F2E2E;
+  overflow-x: hidden;
+}
 
 /* NAVBAR STICKY */
 .navbar {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-background-color: rgba(250, 246, 240, 0.95);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 8%;
-z-index: 1000;
-border-bottom: 1px solid rgba(224, 93, 134, 0.1);
-} 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(250, 246, 240, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(224, 93, 134, 0.1);
+}
 
 .navbar .logo {
-font-weight: 800;
-font-size: 22px;
-color: #E05D86; /* Warna Pink Tua */
-letter-spacing: 1px;
-} 
+  font-weight: 800;
+  font-size: 22px;
+  color: #E05D86; /* Pink Tua */
+  letter-spacing: 1px;
+}
 
 .navbar ul {
-display: flex;
-list-style: none;
-} 
+  display: flex;
+  list-style: none;
+}
 
 .navbar ul li {
-margin-left: 30px;
-} 
+  margin-left: 30px;
+}
 
 .navbar ul li a {
-text-decoration: none;
-color: #555;
-font-weight: 600;
-font-size: 14px;
-transition: 0.3s ease;
-} 
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
 
 .navbar ul li a:hover {
-color: #E05D86;
-} 
+  color: #E05D86;
+}
 
-/* DEKORASI GELOMBANG & UTAMA */
+/* DEKORASI LINE */
 .wave-line {
-width: 80px;
-height: 6px;
-background-color: #E05D86;
-margin: 15px 0 25px 0;
-border-radius: 3px;
-} 
+  width: 80px;
+  height: 6px;
+  background-color: #E05D86;
+  margin: 15px 0 25px 0;
+  border-radius: 3px;
+}
 
 .center-line {
-margin: 15px auto 40px auto;
-} 
+  margin: 15px auto 40px auto;
+}
 
-/* FORMAT SLIDE SECARA UMUM */
+/* LAYOUT SECTION SLIDE */
 .slide {
-min-height: 100vh;
-padding: 120px 8% 80px 8%;
-display: flex;
-align-items: center;
-justify-content: center;
-} 
+  min-height: 100vh;
+  padding: 140px 8% 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .section-container {
-max-width: 1100px;
-width: 100%;
-display: flex;
-align-items: center;
-gap: 60px;
-} 
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
 
 .block-layout {
-flex-direction: column;
-align-items: stretch;
-} 
+  flex-direction: column;
+  align-items: stretch;
+}
 
 .section-title {
-font-size: 42px;
-font-weight: 800;
-color: #E05D86;
-line-height: 1.2;
-} 
+  font-size: 42px;
+  font-weight: 800;
+  color: #E05D86;
+  line-height: 1.2;
+}
 
 .text-col {
-flex: 1;
-} 
+  flex: 1;
+}
 
 .text-col p {
-font-size: 18px;
-line-height: 1.8;
-color: #555;
-} 
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
 
 .image-col {
-flex: 1;
-display: flex;
-justify-content: center;
-} 
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
 .content-img {
-width: 100%;
-max-width: 400px;
-height: 450px;
-object-fit: cover;
-border-radius: 24px;
-box-shadow: 0 20px 40px rgba(224, 93, 134, 0.15);
-border: 8px solid #FFF;
-} 
+  width: 100%;
+  max-width: 380px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(224, 93, 134, 0.15);
+  border: 8px solid #FFF;
+}
 
-/* SLIDE 1: HERO / INTRO */
+/* HERO SECTION (SLIDE 1) */
 .hero-section {
-background: linear-gradient(135deg, #FCEAEB 0%, #FAF6F0 100%);
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-padding: 0 10%;
-} 
+  background: linear-gradient(135deg, #FCEAEB 0%, #FAF6F0 100%);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+}
 
 .hero-content {
-max-width: 550px;
-} 
+  max-width: 550px;
+}
 
 .hero-title {
-font-size: 64px;
-font-weight: 800;
-color: #E05D86;
-line-height: 1.1;
-margin-bottom: 10px;
-} 
+  font-size: 64px;
+  font-weight: 800;
+  color: #E05D86;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
 
 .hero-subtitle {
-font-size: 24px;
-color: #EAA811; /* Warna Kuning Aksen */
-font-weight: 500;
-} 
+  font-size: 24px;
+  color: #EAA811; /* Kuning Cerah */
+  font-weight: 500;
+}
 
 .hero-image-container {
-flex: 1;
-display: flex;
-justify-content: flex-end;
-} 
+  display: flex;
+  justify-content: flex-end;
+}
 
 .hero-img {
-width: 380px;
-height: 480px;
-object-fit: cover;
-border-radius: 40px 10px 40px 10px;
-border: 10px solid #FFF;
-box-shadow: 0 30px 60px rgba(0,0,0,0.1);
-} 
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 40px 10px 40px 10px;
+  border: 10px solid #FFF;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
 
-/* SLIDE 3: GRID SEKOLAH BACKGROUND */
+/* BG KELAS & SEKOLAH */
 .grid-bg {
-background-color: #F7EFF1;
-} 
+  background-color: #F7EFF1;
+}
 
 .yellow-text {
-color: #D6960A;
-} 
+  color: #D6960A;
+}
 
-/* SLIDE 5: HOBI & KESIBUKAN (YELLOW BG) */
+/* HOBI KESIBUKAN (SLIDE 5) */
 .yellow-bg {
-background-color: #FFFDF6;
-} 
+  background-color: #FFFDF6;
+}
 
 .center-text {
-text-align: center;
-} 
+  text-align: center;
+}
 
 .subtitle-p {
-font-size: 16px;
-color: #777;
-margin-bottom: 50px;
-} 
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 50px;
+}
 
 .hobby-grid {
-display: flex;
-gap: 30px;
-} 
+  display: flex;
+  gap: 30px;
+}
 
 .hobby-card {
-flex: 1;
-background-color: #FFF;
-padding: 40px;
-border-radius: 20px;
-box-shadow: 0 10px 30px rgba(214, 150, 10, 0.05);
-border: 1px solid #F3EFE0;
-} 
+  flex: 1;
+  background-color: #FFF;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(214, 150, 10, 0.05);
+  border: 1px solid #F3EFE0;
+}
 
 .hobby-card h3 {
-font-size: 24px;
-color: #E05D86;
-margin-bottom: 15px;
-} 
+  font-size: 24px;
+  color: #E05D86;
+  margin-bottom: 15px;
+}
 
 .hobby-card p {
-font-size: 16px;
-line-height: 1.7;
-color: #555;
-} 
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
 
-/* SLIDE 6: ORGANISASI */
+/* ORGANISASI (SLIDE 6) */
 .org-box {
-display: flex;
-align-items: center;
-gap: 50px;
-margin-bottom: 60px;
-background: white;
-padding: 30px;
-border-radius: 24px;
-box-shadow: 0 15px 35px rgba(0,0,0,0.02);
-} 
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.02);
+}
 
 .org-box.reverse {
-flex-direction: row-reverse;
-} 
+  flex-direction: row-reverse;
+}
 
 .org-text {
-flex: 1;
-} 
+  flex: 1;
+}
 
 .org-text h3 {
-font-size: 24px;
-color: #2F2E2E;
-margin-bottom: 15px;
-} 
+  font-size: 24px;
+  color: #2F2E2E;
+  margin-bottom: 15px;
+}
 
 .org-text p {
-font-size: 16px;
-line-height: 1.7;
-color: #666;
-} 
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+}
 
 .org-gallery {
-flex: 1;
-display: flex;
-gap: 15px;
-} 
+  flex: 1;
+  display: flex;
+  gap: 15px;
+}
 
 .org-gallery img {
-object-fit: cover;
-border-radius: 14px;
-} 
+  object-fit: cover;
+  border-radius: 14px;
+  border: 4px solid #FFF;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
 
 .single-img img {
-width: 100%;
-height: 250px;
-} 
+  width: 100%;
+  height: 250px;
+}
 
 .double-img img {
-width: 50%;
-height: 200px;
-} 
+  width: 50%;
+  height: 200px;
+}
 
-/* SLIDE 7: INSTAGRAM */
+/* INSTAGRAM (SLIDE 7) */
 .instagram-section {
-background: linear-gradient(180deg, #FAF6F0 0%, #FCEAEB 100%);
-} 
+  background: linear-gradient(180deg, #FAF6F0 0%, #FCEAEB 100%);
+}
 
 .insta-box {
-text-align: center;
-max-width: 600px;
-background: #FFF;
-padding: 50px 40px;
-border-radius: 30px;
-box-shadow: 0 20px 50px rgba(224, 93, 134, 0.1);
-} 
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  background: #FFF;
+  padding: 50px 40px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(224, 93, 134, 0.1);
+}
 
 .insta-box h2 {
-font-size: 32px;
-color: #E05D86;
-margin-bottom: 15px;
-} 
+  font-size: 32px;
+  color: #E05D86;
+  margin-bottom: 15px;
+}
 
 .insta-box p {
-font-size: 16px;
-color: #666;
-margin-bottom: 30px;
-} 
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
 
 .insta-btn {
-display: inline-block;
-background-color: #E05D86;
-color: white;
-padding: 15px 35px;
-border-radius: 50px;
-text-decoration: none;
-font-weight: 700;
-transition: 0.3s;
-box-shadow: 0 10px 20px rgba(224, 93, 134, 0.3);
-} 
+  display: inline-block;
+  background-color: #E05D86;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(224, 93, 134, 0.3);
+}
 
 .insta-btn:hover {
-background-color: #C6436C;
-transform: translateY(-2px);
-} 
+  background-color: #C6436C;
+  transform: translateY(-2px);
+}
 
-/* SLIDE 8: QUOTES FOOTER */
+/* QUOTES FOOTER (SLIDE 8) */
 .quotes-footer {
-background-color: #E05D86;
-color: white;
-min-height: 60vh;
-text-align: center;
-padding: 60px 10%;
-} 
+  background-color: #E05D86;
+  color: white;
+  min-height: 50vh;
+  text-align: center;
+  padding: 80px 10% 40px 10%;
+  flex-direction: column;
+}
 
 .quotes-content {
-max-width: 800px;
-margin: 0 auto;
-} 
+  max-width: 800px;
+}
 
 .main-quote {
-font-size: 28px;
-font-weight: 700;
-line-height: 1.6;
-font-style: italic;
-margin-bottom: 40px;
-} 
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 50px;
+}
 
 .footer-credit {
-font-size: 14px;
-opacity: 0.8;
-} 
+  font-size: 14px;
+  opacity: 0.8;
+}
 
-/* RESPONSIVE LAYOUT UNTUK HP */
+/* RESPONSIVE SMARTPHONE */
 @media (max-width: 768px) {
-.navbar { padding: 15px 5%; }
-.navbar ul { display: none; } /* Sembunyikan menu di HP untuk kesederhanaan */
-.hero-section { flex-direction: column; text-align: center; padding-top: 120px; }
-.hero-img { width: 100%; max-width: 300px; height: 380px; margin-top: 30px; }
-.section-container, .org-box, .org-box.reverse { flex-direction: column; gap: 30px; }
-.hobby-grid { flex-direction: column; }
-.hero-title { font-size: 40px; }
-.section-title { font-size: 32px; }
+  .navbar ul { display: none; }
+  .hero-section { flex-direction: column; text-align: center; padding-top: 100px; gap: 30px; }
+  .hero-img { width: 100%; max-width: 280px; height: 360px; }
+  .section-container, .org-box, .org-box.reverse { flex-direction: column; gap: 30px; }
+  .hobby-grid { flex-direction: column; }
+  .hero-title { font-size: 42px; }
+  .section-title { font-size: 32px; }
 }

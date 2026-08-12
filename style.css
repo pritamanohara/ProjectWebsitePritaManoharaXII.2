@@ -1,4 +1,6 @@
-/* RESET & UMUM */
+/* ==========================================================================
+   1. RESET, LAYOUT & BACKGROUND GRADIEN KHUSUS PER SLIDE
+   ========================================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -11,18 +13,92 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #FAF6F0; /* Cream estetik */
   color: #2F2E2E;
   overflow-x: hidden;
+  background-color: #FAF6F0;
 }
 
-/* NAVBAR STICKY */
+/* Slide 1 (Intro) & Slide 8 (Outro) - Disamakan: Gradasi Pink Lembut ke Putih */
+#intro, .quotes-footer {
+  background: linear-gradient(135deg, #FFF0F2 0%, #FFFFFF 100%);
+  position: relative;
+}
+
+/* Slide 2: Sekilas Tentang Aku - Gradasi Putih ke Cream Hangat */
+#about {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAF6F0 100%);
+}
+
+/* Slide 3: SMA Negeri 10 Depok - Sentuhan Flora Soft Pink & Hijau Daun Pastel Alami */
+#sekolah {
+  background: linear-gradient(135deg, #FAF6F0 0%, #E8F5E9 50%, #FFF0F2 100%);
+}
+
+/* Slide 4: Kelas XII.2 - Gradasi Pink Cerah ke Kuning Lembut */
+#kelas {
+  background: linear-gradient(120deg, #FFF0F2 0%, #FFFDEB 100%);
+}
+
+/* Slide 5: Hobi & Kesibukan - Dominan Kuning Pastel Aesthetic */
+#hobi {
+  background: linear-gradient(180deg, #FFFDEB 0%, #FFFFFF 100%);
+}
+
+/* Slide 6: Organisasi - Latar Belakang Bersih dengan Gradasi Tipis */
+#organisasi {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF0F2 100%);
+}
+
+/* Slide 7: Instagram - Gradasi Bold Pink Estetik */
+#kontak {
+  background: linear-gradient(180deg, #FFF0F2 0%, #FCEAEB 100%);
+}
+
+/* ==========================================================================
+   2. SISTEM ANIMASI OTOMATIS (MUNCUL PERLAHAN / FADE IN UP)
+   ========================================================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Menambahkan Efek Animasi Otomatis saat Halaman Dimuat */
+.hero-content, .section-container, .insta-box, .quotes-content {
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Efek Transisi Tambahan untuk Elemen Kartu & Foto */
+.content-img, .hero-img, .hobby-card, .org-box {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efek Interaktif: Mengambang Saat Kursor Diarahkan (Hover) */
+.content-img:hover, .hero-img:hover {
+  transform: scale(1.03) rotate(1deg);
+  box-shadow: 0 25px 50px rgba(224, 93, 134, 0.25);
+}
+
+.hobby-card:hover, .org-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(224, 93, 134, 0.12);
+}
+
+/* ==========================================================================
+   3. DETAIL ELEMEN VISUAL (NAVBAR, TABEL, KARTU)
+   ========================================================================== */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(250, 246, 240, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +110,7 @@ body {
 .navbar .logo {
   font-weight: 800;
   font-size: 22px;
-  color: #E05D86; /* Pink Tua */
+  color: #E05D86;
   letter-spacing: 1px;
 }
 
@@ -52,14 +128,13 @@ body {
   color: #555;
   font-weight: 600;
   font-size: 14px;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .navbar ul li a:hover {
   color: #E05D86;
 }
 
-/* DEKORASI LINE */
 .wave-line {
   width: 80px;
   height: 6px;
@@ -72,7 +147,6 @@ body {
   margin: 15px auto 40px auto;
 }
 
-/* LAYOUT SECTION SLIDE */
 .slide {
   min-height: 100vh;
   padding: 140px 8% 80px 8%;
@@ -101,6 +175,10 @@ body {
   line-height: 1.2;
 }
 
+.yellow-text {
+  color: #D6960A;
+}
+
 .text-col {
   flex: 1;
 }
@@ -127,9 +205,8 @@ body {
   border: 8px solid #FFF;
 }
 
-/* HERO SECTION (SLIDE 1) */
+/* HERO SLIDE 1 */
 .hero-section {
-  background: linear-gradient(135deg, #FCEAEB 0%, #FAF6F0 100%);
   flex-direction: row;
   justify-content: space-between;
   padding: 0 10%;
@@ -149,13 +226,8 @@ body {
 
 .hero-subtitle {
   font-size: 24px;
-  color: #EAA811; /* Kuning Cerah */
+  color: #EAA811;
   font-weight: 500;
-}
-
-.hero-image-container {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .hero-img {
@@ -167,20 +239,7 @@ body {
   box-shadow: 0 30px 60px rgba(0,0,0,0.1);
 }
 
-/* BG KELAS & SEKOLAH */
-.grid-bg {
-  background-color: #F7EFF1;
-}
-
-.yellow-text {
-  color: #D6960A;
-}
-
-/* HOBI KESIBUKAN (SLIDE 5) */
-.yellow-bg {
-  background-color: #FFFDF6;
-}
-
+/* HOBI KARTU (SLIDE 5) */
 .center-text {
   text-align: center;
 }
@@ -201,7 +260,7 @@ body {
   background-color: #FFF;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(214, 150, 10, 0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
   border: 1px solid #F3EFE0;
 }
 
@@ -217,7 +276,7 @@ body {
   color: #555;
 }
 
-/* ORGANISASI (SLIDE 6) */
+/* ORGANISASI KARTU (SLIDE 6) */
 .org-box {
   display: flex;
   align-items: center;
@@ -272,11 +331,7 @@ body {
   height: 200px;
 }
 
-/* INSTAGRAM (SLIDE 7) */
-.instagram-section {
-  background: linear-gradient(180deg, #FAF6F0 0%, #FCEAEB 100%);
-}
-
+/* INSTAGRAM BOX (SLIDE 7) */
 .insta-box {
   text-align: center;
   max-width: 600px;
@@ -284,7 +339,7 @@ body {
   background: #FFF;
   padding: 50px 40px;
   border-radius: 30px;
-  box-shadow: 0 20px 50px rgba(224, 93, 134, 0.1);
+  box-shadow: 0 20px 50px rgba(224, 93, 134, 0.08);
 }
 
 .insta-box h2 {
@@ -313,16 +368,15 @@ body {
 
 .insta-btn:hover {
   background-color: #C6436C;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-/* QUOTES FOOTER (SLIDE 8) */
+/* FOOTER QUOTES (SLIDE 8) */
 .quotes-footer {
-  background-color: #E05D86;
-  color: white;
-  min-height: 50vh;
+  color: #E05D86;
+  min-height: 60vh;
   text-align: center;
-  padding: 80px 10% 40px 10%;
+  padding: 100px 10% 40px 10%;
   flex-direction: column;
 }
 
@@ -331,22 +385,23 @@ body {
 }
 
 .main-quote {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.6;
   font-style: italic;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  color: #E05D86;
 }
 
 .footer-credit {
   font-size: 14px;
-  opacity: 0.8;
+  color: #777;
 }
 
-/* RESPONSIVE SMARTPHONE */
+/* RESPONSIVE LAYOUT UNTUK LAYAR HP */
 @media (max-width: 768px) {
   .navbar ul { display: none; }
-  .hero-section { flex-direction: column; text-align: center; padding-top: 100px; gap: 30px; }
+  .hero-section { flex-direction: column; text-align: center; padding-top: 120px; gap: 30px; }
   .hero-img { width: 100%; max-width: 280px; height: 360px; }
   .section-container, .org-box, .org-box.reverse { flex-direction: column; gap: 30px; }
   .hobby-grid { flex-direction: column; }

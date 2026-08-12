@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Resmi Prita Manohara</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVBAR -->
+
+  <!-- NAVBAR STICKY -->
   <header class="navbar">
-    <div class="logo">Prita Manohara</div>
+    <div class="logo">PRITA MANOHARA</div>
     <nav>
       <ul>
         <li><a href="#intro">Home</a></li>
@@ -25,59 +29,123 @@
 
   <!-- SLIDE 1: INTRO -->
   <section id="intro" class="slide hero-section">
-    <h1>Heloow! I`m Prita!</h1>
-    <p>come get to know me better!</p>
-    <img src="foto.jpg" alt="Prita Manohara">
+    <div class="hero-content">
+      <h1 class="hero-title">Heloow! I`m Prita!</h1>
+      <p class="hero-subtitle">come get to know me better!</p>
+    </div>
+    <div class="hero-image-container">
+      <!-- Ganti foto.jpg dengan nama file foto utama kamu di GitHub -->
+      <img src="foto.jpg" alt="Prita Manohara" class="hero-img">
+    </div>
   </section>
 
   <!-- SLIDE 2: GAMBARAN SINGKAT -->
-  <section id="about" class="slide">
-    <h2>Sekilas Tentang Aku</h2>
-    <p>Halo! Nama saya Prita Manohara. Saya seorang siswi SMA yang ceria, penuh semangat, dan aktif di organisasi.</p>
-    <img src="foto.jpg" alt="Profil Prita">
+  <section id="about" class="slide text-image-section">
+    <div class="section-container">
+      <div class="text-col">
+        <h2 class="section-title">Sekilas Tentang Aku</h2>
+        <div class="wave-line"></div>
+        <p>Halo! Nama saya Prita Manohara. Saya seorang siswi SMA yang ceria, penuh semangat, dan aktif berorganisasi. Aku seneng banget bisa berbagi cerita lewat website portofolio personal ini!</p>
+      </div>
+      <div class="image-col">
+        <img src="foto.jpg" alt="Profil Prita" class="content-img">
+      </div>
+    </div>
   </section>
 
   <!-- SLIDE 3: SEKOLAH -->
-  <section id="sekolah" class="slide">
-    <h2>SMA Negeri 10 Depok</h2>
-    <p>Saat ini saya menempuh pendidikan di SMA Negeri 10 Depok. Sekolah yang seru dan mendukung saya untuk berkembang.</p>
-    <img src="foto.jpg" alt="SMAN 10 Depok">
+  <section id="sekolah" class="slide image-text-section grid-bg">
+    <div class="section-container">
+      <div class="image-col">
+        <img src="foto.jpg" alt="SMAN 10 Depok" class="content-img">
+      </div>
+      <div class="text-col">
+        <h2 class="section-title yellow-text">SMA Negeri 10 Depok</h2>
+        <div class="wave-line"></div>
+        <p>Saat ini saya menempuh pendidikan di SMA Negeri 10 Depok. Sekolah ini seru banget dan selalu mendukung aku untuk terus berkembang mengeksplorasi hal-hal baru baik di bidang akademik maupun non-akademik.</p>
+      </div>
+    </div>
   </section>
 
   <!-- SLIDE 4: KELAS -->
-  <section id="kelas" class="slide">
-    <h2>Kelas XII.2</h2>
-    <p>XII.2 asik banget! Seru, ramah, perhatian, dan temen-temennya pinter plus cerdas.</p>
-    <img src="foto.jpg" alt="Kelas XII.2">
+  <section id="kelas" class="slide text-image-section">
+    <div class="section-container">
+      <div class="text-col">
+        <h2 class="section-title">Kelas XII.2</h2>
+        <div class="wave-line"></div>
+        <p>Aku berada di kelas XII.2! Pokoknya kelas aku ini asik banget, seru, ramah, dan anak-anaknya sangat perhatian satu sama lain. Nggak cuma kompak buat seru-seruan, temen-temen di kelas juga pinter plus cerdas semua!</p>
+      </div>
+      <div class="image-col">
+        <img src="foto.jpg" alt="Kelas XII.2" class="content-img">
+      </div>
+    </div>
   </section>
 
   <!-- SLIDE 5: HOBI & KESIBUKAN -->
-  <section id="hobi" class="slide">
-    <h2>Hobi & Kesibukan</h2>
-    <p>Hobi aku menulis, public speaking, dan berorganisasi. Kesibukan sekarang fokus studi tingkat akhir dan aktif kegiatan sosial.</p>
+  <section id="hobi" class="slide detail-section yellow-bg">
+    <div class="section-container block-layout">
+      <h2 class="section-title center-text">Hobi & Kesibukan</h2>
+      <p class="center-text subtitle-p">Kenali dunia produktif dan hal-hal yang aku sukai sehari-hari.</p>
+      <div class="hobby-grid">
+        <div class="hobby-card">
+          <h3>Hobi & Minat</h3>
+          <p>Aku suka banget menulis, public speaking, berorganisasi, serta ikutan berbagai macam kegiatan sosial di lingkungan sekitar.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>Kesibukan Sekarang</h3>
+          <p>Saat ini fokus utamaku adalah menyelesaikan studi tingkat akhir di SMA, aktif di organisasi, serta memperdalam ilmu komunikasi.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SLIDE 6: ORGANISASI -->
-  <section id="organisasi" class="slide">
-    <h2>Pengalaman Organisasi</h2>
-    <h3>MPK OSIS SMAN 10 Depok</h3>
-    <p>Aktif dalam menyusun dan mengeksekusi program kerja sekolah.</p>
-    <img src="foto.jpg" alt="MPK OSIS">
-    <h3>Forum Kesatuan Pelajar Depok</h3>
-    <p>Wadah kolaborasi pengurus organisasi pelajar se-Kota Depok.</p>
-    <img src="foto.jpg" alt="Forum Pelajar 1">
+  <section id="organisasi" class="slide organisasi-section">
+    <div class="section-container block-layout">
+      <h2 class="section-title center-text">Pengalaman Organisasi</h2>
+      <div class="wave-line center-line"></div>
+      
+      <!-- MPK OSIS (1 Foto) -->
+      <div class="org-box">
+        <div class="org-text">
+          <h3>MPK OSIS SMAN 10 Depok</h3>
+          <p>Aktif dalam menyusun, mengordinasikan, dan mengeksekusi berbagai program kerja sekolah agar lingkungan sekolah semakin hidup dan positif.</p>
+        </div>
+        <div class="org-gallery single-img">
+          <img src="foto.jpg" alt="MPK OSIS">
+        </div>
+      </div>
+
+      <!-- Forum Kesatuan Pelajar Depok (2 Foto) -->
+      <div class="org-box reverse">
+        <div class="org-text">
+          <h3>Forum Kesatuan Pelajar Depok</h3>
+          <p>Wadah kolaborasi pengurus organisasi pelajar se-Kota Depok untuk mengembangkan jiwa kepemimpinan serta aksi nyata antar pelajar.</p>
+        </div>
+        <div class="org-gallery double-img">
+          <img src="foto.jpg" alt="Forum Pelajar 1">
+          <img src="foto.jpg" alt="Forum Pelajar 2">
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SLIDE 7: SOSIAL MEDIA -->
-  <section id="kontak" class="slide">
-    <h2>Let's Connect! 🌟</h2>
-    <p>Yuk, kunjungi Instagram aku!</p>
-    <a href="https://instagram.com" target="_blank">@pritamanohara</a>
+  <section id="kontak" class="slide instagram-section">
+    <div class="insta-box">
+      <h2>Let's Connect! 🌟</h2>
+      <p>Kalau kamu mau kenal aku lebih lanjut atau pengen berkolaborasi, yuk kunjungi akun Instagram aku!</p>
+      <a href="https://instagram.com" target="_blank" class="insta-btn">Kunjungi Instagram @pritamanohara</a>
+    </div>
   </section>
 
   <!-- SLIDE 8: QUOTES -->
-  <footer class="slide">
-    <p>"If you don't wanna grind for your own dreams today, get ready to get paid to build someone else's."</p>
+  <footer class="slide quotes-footer">
+    <div class="quotes-content">
+      <p class="main-quote">"If you don't wanna grind for your own dreams today, get ready to get paid to build someone else's."</p>
+      <p class="footer-credit">© 2026 Prita Manohara. Dibuat dengan ❤ untuk Proyek Informatika SMAN 10 Depok.</p>
+    </div>
   </footer>
+
 </body>
 </html>
